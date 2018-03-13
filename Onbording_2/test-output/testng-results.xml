@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="48565" started-at="2018-03-12T10:49:58Z" finished-at="2018-03-12T10:50:46Z">
+    <groups>
+    </groups>
+    <test name="FirefoxTest" duration-ms="25883" started-at="2018-03-12T10:49:58Z" finished-at="2018-03-12T10:50:24Z">
+      <class name="tests.FlightBookingCheck">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:tests.FlightBookingCheck@5e3a8624]" name="openBrowser" is-config="true" duration-ms="4496" started-at="2018-03-12T10:49:58Z" finished-at="2018-03-12T10:50:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="FlightBookingTest()[pri:0, instance:tests.FlightBookingCheck@5e3a8624]" name="FlightBookingTest" duration-ms="20732" started-at="2018-03-12T10:50:02Z" finished-at="2018-03-12T10:50:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightBookingTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.FlightBookingCheck@5e3a8624]" name="closeBrowser" is-config="true" duration-ms="641" started-at="2018-03-12T10:50:23Z" finished-at="2018-03-12T10:50:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.FlightBookingCheck -->
+    </test> <!-- FirefoxTest -->
+    <test name="ChromeTest" duration-ms="22662" started-at="2018-03-12T10:50:24Z" finished-at="2018-03-12T10:50:46Z">
+      <class name="tests.FlightBookingCheck">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:tests.FlightBookingCheck@402a079c]" name="openBrowser" is-config="true" duration-ms="1944" started-at="2018-03-12T10:50:24Z" finished-at="2018-03-12T10:50:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="FlightBookingTest()[pri:0, instance:tests.FlightBookingCheck@402a079c]" name="FlightBookingTest" duration-ms="20108" started-at="2018-03-12T10:50:26Z" finished-at="2018-03-12T10:50:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightBookingTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.FlightBookingCheck@402a079c]" name="closeBrowser" is-config="true" duration-ms="608" started-at="2018-03-12T10:50:46Z" finished-at="2018-03-12T10:50:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.FlightBookingCheck -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
