@@ -42,7 +42,7 @@ public class FlightBookingCheck
 			driver = new InternetExplorerDriver();
 		}
   }
-  @Test
+  @Test(priority=1)
   public void  FlightBookingTest() throws InterruptedException
   {
 	  driver.navigate().to(url);
@@ -58,6 +58,52 @@ public class FlightBookingCheck
 				//select Destination
 				WebElement flyingTo=driver.findElement(By.id("flight-destination"));
 				flyingTo.sendKeys("Fort Lauderdale, FL (FLL-All Airports)");
+				Thread.sleep(1000);
+				
+
+				//selecting date from date picker	
+				driver.findElement(By.id("flight-departing")).click();
+				WebElement departingDate = driver.findElement(By.className("datepicker-cal-dates"));
+		    	
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				
+		        
+				List<WebElement> column=departingDate.findElements(By.tagName("td"));
+			    
+				js.executeScript("window.scrollBy(0,200)");
+				for (WebElement cell: column)
+			    {
+			    	String date=cell.getText();
+			    	if(date.equalsIgnoreCase("28"))
+					{
+			    		cell.click();
+						break;
+					}
+				}
+			   	Thread.sleep(1000);
+				WebElement btnSearch=driver.findElement(By.id("search-button"));
+				//Taking Screenshot
+				
+				
+				btnSearch.click();
+				
+  }
+  @Test(priority=2)
+  public void  FlightBookingValidation() throws InterruptedException
+  {
+	  driver.navigate().to(url);
+		
+				WebElement flightMenu=driver.findElement(By.id("primary-header-flight"));
+				flightMenu.click();
+				
+				//select source
+				WebElement flyingFrom=driver.findElement(By.id("flight-origin"));
+				flyingFrom.sendKeys("Mumbai, India (BOM-Chhatrapati Shivaji Intl.)");
+				Thread.sleep(1000);
+				
+				//select Destination
+				WebElement flyingTo=driver.findElement(By.id("flight-destination"));
+				flyingTo.sendKeys("Mumbai, India (BOM-Chhatrapati Shivaji Intl.)");
 				Thread.sleep(1000);
 				
 

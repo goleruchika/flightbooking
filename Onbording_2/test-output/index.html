@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\ruchika.gole\workspace\Onbording_2\testng.xml</span>
+                    <span>C:\Users\ruchika.gole\git\Onbording_2\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,6 +108,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FlightBookingCheck" hash-for-method="FlightBookingTest">FlightBookingTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FlightBookingCheck" hash-for-method="FlightBookingValidation">FlightBookingValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.FlightBookingCheck" hash-for-method="FlightBookingValidation">FlightBookingValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -142,12 +152,26 @@
                   <span class="method-name">FlightBookingTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FlightBookingValidation">
+                  </a> <!-- FlightBookingValidation -->
+                  <span class="method-name">FlightBookingValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FlightBookingValidation">
+                  </a> <!-- FlightBookingValidation -->
+                  <span class="method-name">FlightBookingValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ruchika.gole\workspace\Onbording_2\testng.xml</span>
+            <span class="header-content">C:\Users\ruchika.gole\git\Onbording_2\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -206,20 +230,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'FlightBookingTest')
+data.setCell(0, 1, 'FlightBookingValidation')
 data.setCell(0, 2, 'tests.FlightBookingCheck')
-data.setCell(0, 3, 20732);
+data.setCell(0, 3, 28273);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'FlightBookingTest')
 data.setCell(1, 2, 'tests.FlightBookingCheck')
-data.setCell(1, 3, 20108);
+data.setCell(1, 3, 24769);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'FlightBookingTest')
+data.setCell(2, 2, 'tests.FlightBookingCheck')
+data.setCell(2, 3, 23310);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'FlightBookingValidation')
+data.setCell(3, 2, 'tests.FlightBookingCheck')
+data.setCell(3, 3, 15014);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -252,23 +284,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">FlightBookingTest</span>
-                <span class="method-start">4504 ms</span>
+                <span class="method-start">4351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FlightBookingValidation</span>
+                <span class="method-start">27664 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">25239 ms</span>
+                <span class="method-start">55938 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(chrome)</span>
-                <span class="method-start">25900 ms</span>
+                <span class="method-start">56779 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">FlightBookingTest</span>
-                <span class="method-start">27845 ms</span>
+                <span class="method-start">58746 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FlightBookingValidation</span>
+                <span class="method-start">83516 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">47954 ms</span>
+                <span class="method-start">98531 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
